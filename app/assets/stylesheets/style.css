@@ -182,3 +182,8 @@ p {
 .input_form {
   padding-right: 20px;
 }
+
+#flash-alert {
+  position: relative;
+  top: 40px;
+}
