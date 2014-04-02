@@ -20,7 +20,7 @@ feature 'Visitor clicks do it' do
     scenario 'as signed in user' do
       visit root_path
       click_button 'What should I do today?'
-      click_button 'Do me!'
+      click_button 'Do it!'
       expect(page).to have_content 'Whoa'
     end
   end
@@ -45,7 +45,7 @@ feature 'Visitor clicks do it' do
     scenario 'as visitor' do
       visit root_path
       click_button 'What should I do today?'
-      click_button 'Do me!'
+      click_button 'Do it!'
       expect(page).to have_content 'Whoa'
     end
   end

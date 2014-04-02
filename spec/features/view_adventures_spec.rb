@@ -20,7 +20,7 @@ feature 'User can view their adventures' do
     scenario 'as signed in user' do
       visit root_path
       click_button 'What should I do today?'
-      click_button 'Do me!'
+      click_button 'Do it!'
       click_button 'I Did It!'
       fill_in 'type your story here!', with: 'I had a great time'
       click_button 'story-submit'

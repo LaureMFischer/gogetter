@@ -7,11 +7,11 @@ Deck.calculateHMSleft = function() {
     HTML = '';
   // Format 0 prefixes
   if(hoursleft < 10){
-    hoursleft = "0" + hoursleft };
+    hoursleft = "0" + hoursleft}
   if(minutesleft < 10){
-    minutesleft = "0" + minutesleft };
+    minutesleft = "0" + minutesleft}
   if(secondsleft < 10){
-    secondsleft = "0" + secondsleft };
+    secondsleft = "0" + secondsleft}
 
   HTML = "<p class='countdown-text'>Whoa! You'd better get going, there's only</p>"
           + "<div id='countdown-timer'>" + hoursleft + ":" + minutesleft + ":" + secondsleft + "</div>"
