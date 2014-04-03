@@ -95,7 +95,7 @@ Deck.renderDidIt = function(event) {
     data: { activity_id: id }
   })
   .done(function(data){
-    window.location.href = '/adventures/activity/' + id // send to show page for adventure
+    window.location.href = '/adventures/activity/' + id; // send to show page for adventure
   });
 
   return false;
