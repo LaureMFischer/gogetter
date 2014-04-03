@@ -94,8 +94,11 @@ Deck.renderDidIt = function(event) {
     url: '/adventures/new',
     data: { activity_id: id }
   })
-  .done(function(data){
+  .success(function(data){
     window.location.href = '/adventures/activity/' + id; // send to show page for adventure
+  })
+  .fail(function(data){
+    window.location.href = 'activities/home';
   });
 
   return false;
